@@ -12,7 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -yqq update \
     subversion git-core libboost-regex-dev libcurl4-openssl-dev libmosquitto-dev libssl-dev \
     mosquitto-dev libjson-c-dev mc tcpdump \
  && mkdir /var/run/sshd \
- && useradd -m eclipse -s /bin/bash -u 1001 \
+ && useradd -m eclipse -s /bin/bash -u 1001 -G dialout \
  && echo 'eclipse ALL=NOPASSWD: ALL' > /etc/sudoers.d/eclipse \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
