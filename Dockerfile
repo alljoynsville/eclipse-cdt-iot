@@ -2,7 +2,7 @@ from ubuntu:artful
 
 MAINTAINER alljoynsville
 
-ENV DOWNLOAD_URL http://download.eclipse.org/technology/epp/downloads/release/oxygen/R/eclipse-cpp-oxygen-R-linux-gtk-x86_64.tar.gz
+ENV DOWNLOAD_URL http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/3/eclipse-cpp-oxygen-3-linux-gtk-x86_64.tar.gz
 ENV INSTALLATION_DIR /usr/local
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -yqq update \
